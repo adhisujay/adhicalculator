@@ -1,0 +1,54 @@
+<html>
+<script language="javascript">
+	function addNumbers() {
+
+	    var value1 = parseInt(document.getElementById("value1").value);
+	    var value2 = parseInt(document.getElementById("value2").value);
+	    var	ansD = document.getElementById("answer");
+	    ansD.value  = value1 + value2;
+	}
+	function subNumbers() {
+
+	    var value1 = parseInt(document.getElementById("value1").value);
+	    var value2 = parseInt(document.getElementById("value2").value);
+	    var	ansD = document.getElementById("answer");
+	    ansD.value  = value1 - value2;
+	}
+	function multiNumbers() {
+
+	    var value1 = parseInt(document.getElementById("value1").value);
+	    var value2 = parseInt(document.getElementById("value2").value);
+	    var	ansD = document.getElementById("answer");
+	    ansD.value  = value1 * value2;
+	}
+	function divNumbers() {
+
+	    var value1 = parseInt(document.getElementById("value1").value);
+	    var value2 = parseInt(document.getElementById("value2").value);
+	    var	ansD = document.getElementById("answer");
+	    ansD.value  = value1 / value2;
+	}
+
+</script>
+
+<head align="center">
+</head>
+<body style="background-color:#ccffff;">
+	<div align="center">
+  <font face="verdana" color="green">
+  	<h1><B>Adhi's Calculator</B></h1>
+	<br></br>
+	value1 : <input type="text" id="value1" name="value1" value=""/><br></br>
+    value2 : <input type="text" id="value2" name="value2" value=""/><br></br>
+    Functions :
+    <input type="button" name="Submit" value="-" onclick="javascript:subNumbers()"/>  
+    <input type="button" name="Submit" value="+" onclick="javascript:addNumbers()"/>  
+    <input type="button" name="Submit" value="x" onclick="javascript:multiNumbers()"/>  
+    <input type="button" name="Submit" value="÷" onclick="javascript:divNumbers()"/> <br></br>
+
+    Answer : <input type="text" id="answer" name="answer" value=""/>
+
+</div>
+
+</body>
+</html>
